@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>VUE 组件封装</title>
+
+    <link rel="stylesheet" href="datePicker.css">
+    <style>
+        table{
+            table-layout:fixed
+        }
+        td{ width: 120px; }
+    </style>
+</head>
+<body>
+<div id="app">
+    <date-picker :onchange="change"></date-picker>
+</div>
+
+
+</body>
+<script src="vue.js"></script>
+<script src="datePicker.js"></script>
+<script src="request.js"></script>
+<script>
+    new Vue({
+        el : "#app" ,
+        data : {
+           val : "2017-06-30"
+        } ,
+        methods : {
+            change : function ( evt , data ) {
+                console.log( evt , data )
+            }
+        }
+    })
+
+    // Get("/abc").then(function ( val ) {
+    //     console.log( val )
+    // },function ( err ) {
+    //     console.log( err )
+    // })
+    //Jsonp("http://venuesapi.g-town.com.cn/venues/mybill","").then(function ( val ) {
+    //    console.log( val )
+    //})
+</script>
+</html>

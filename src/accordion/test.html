@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Title</title>
+    <script type="text/javascript">
+        window.addEventListener("resize" ,rootWidth  ,false);
+        rootWidth();
+        function rootWidth() {
+            var root = document.documentElement;
+            var clientWidth = root.clientWidth;
+            root.style.fontSize = Math.min( clientWidth / 10 , 72 ) + "px";
+        };
+    </script>
+</head>
+
+<style>
+    .box{ padding-left: 1rem; }
+    .box h3{ line-height: 1rem; font-size: .6rem; }
+    .box div{ width: 100%; height: auto; line-height: 1.5rem; overflow: hidden; }
+    .box div dl{ height: 0; }
+    .box div dl dt{ line-height: 1rem; font-size: .5rem; }
+</style>
+<body>
+<div class="box">
+    <div>
+        <h3>标题1</h3>
+        <dl style="height: auto">
+            <dt>1</dt>
+            <dt>2</dt>
+            <dt>3</dt>
+            <dt>4</dt>
+            <dt>5</dt>
+        </dl>
+    </div>
+    <div>
+        <h3>标题2</h3>
+        <dl>
+            <dt>1</dt>
+            <dt>2</dt>
+        </dl>
+    </div>
+    <div>
+        <h3>标题3</h3>
+        <dl>
+            <dt>1</dt>
+            <dt>2</dt>
+            <dt>3</dt>
+            <dt>4</dt>
+        </dl>
+    </div>
+        <div>
+        <h3>标题4</h3>
+        <dl>
+            <dt>8</dt>
+            <dt>29</dt>
+            <dt>30</dt>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

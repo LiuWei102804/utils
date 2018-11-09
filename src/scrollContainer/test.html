@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Title</title>
+    <script type="text/javascript">
+        window.addEventListener("resize" ,rootWidth  ,false);
+        rootWidth();
+        function rootWidth() {
+            var root = document.documentElement;
+            var clientWidth = root.clientWidth;
+            root.style.fontSize = Math.min( clientWidth / 10 , 72 ) + "px";
+        };
+    </script>
+</head>
+<style type="text/css">
+.scroll-container{ width: 10rem; height: 5rem; overflow: hidden; background: rgba(0,0,0,0.4); }
+</style>
+<body>
+
+<div class="scroll-container">
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <li>列表5</li>
+        <li>列表6</li>
+        <li>列表7</li>
+        <li>列表8</li>
+        <li>列表9</li>
+        <li>列表10</li>
+        <li>列表11</li>
+        <li>列表12</li>
+        <li>列表13</li>
+        <li>列表14</li>
+        <li>列表15</li>
+        <li>列表16</li>
+        <li>列表17</li>
+        <li>列表18</li>
+        <li>列表19</li>
+        <li>列表20</li>
+    </ul>
+</div>
+
+</body>
+</html>

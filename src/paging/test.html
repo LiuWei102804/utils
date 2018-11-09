@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Title</title>
+    <script type="text/javascript">
+        window.addEventListener("resize" ,rootWidth  ,false);
+        rootWidth();
+        function rootWidth() {
+            var root = document.documentElement;
+            var clientWidth = root.clientWidth;
+            root.style.fontSize = Math.min( clientWidth / 10 , 72 ) + "px";
+        };
+    </script>
+</head>
+<style>
+    .paging{ width: 10rem; height: 1rem; font-size: .5rem; margin: 2rem auto; text-align: center; }
+    .paging span{ background: #009688; color: #fff; float: left; width: .8rem; height: .8rem; text-align: center; line-height: .8rem; position: relative;}
+    .paging span.prev{ background: transparent; padding: 0; border: .4rem solid #009688; width: 0px; height: 0px; display: inline-block; border-left-color: transparent; border-top-color: transparent; border-bottom-color: transparent; margin-right: 4px; border-left-width: 0; }
+    .paging span.next{ background: transparent; padding: 0;  border: .4rem solid #009688; width: 0px; height: 0px; display: inline-block; border-right-color: transparent; border-top-color: transparent; border-bottom-color: transparent;  margin-left: 4px; border-right-width: 0; }
+
+    .paging span.first{ background: transparent; padding: 0; border: .4rem solid #009688; width: 0px; height: 0px; display: inline-block; border-left-color: transparent; border-top-color: transparent; border-bottom-color: transparent; margin-right: 4px; border-left-width:3px;}
+    .paging span.last{ background: transparent; padding: 0;  border: .4rem solid #009688; width: 0px; height: 0px; display: inline-block; border-right-color: transparent; border-top-color: transparent; border-bottom-color: transparent;  margin-left: 4px; border-right-width: 3px }
+    .paging span.first:before{ content: ""; width: 3px; height: .8rem; background: #009688; display: block; position: absolute; top:-.4rem; left:0; }
+    .paging span.last:before{ content: ""; width: 3px; height: .8rem; background: #009688; display: block; position: absolute; top:-.4rem; left:0; }
+    .paging span.active{ background: cornflowerblue;}
+</style>
+<body>
+<h1>1134443311</h1>
+<div class="paging"></div>
+</body>
+</html>

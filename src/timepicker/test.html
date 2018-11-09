@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Title</title>
+    <script type="text/javascript">
+        window.addEventListener("resize" ,rootWidth  ,false);
+        rootWidth();
+        function rootWidth() {
+            var root = document.documentElement;
+            var clientWidth = root.clientWidth;
+            root.style.fontSize = Math.min( clientWidth / 10 , 72 ) + "px";
+        };
+    </script>
+</head>
+<body>
+<div class="time-container"></div>
+<button class="result">选择</button>
+<button class="result1">开始</button>
+<button class="result2">停止</button>
+</body>
+</html>
